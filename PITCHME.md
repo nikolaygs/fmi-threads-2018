@@ -67,6 +67,10 @@
 - За да създадем нова нишка в Java, наследяваме класа java.lang.Thread
 - Инструкциите за изпълнение поставяме в метода run() който не връща резултат
 
+```
+public class CustomThread extends Thread { public void run() { System.out.println("Hello asynchronous world!"); } }
+```
+
 ---
 
 ### Стартиране на нишка
@@ -81,3 +85,7 @@
 - Нишката не може да бъде стартирана повторно!
 
 ---
+
+### java.lang.Runnable
+- Нишка може да бъде дефинирана и чрез интерфейса java.lang.Runnable
+- За да стартираме нишката, подаваме инстанция на конкретния клас на java.lang.Thread
