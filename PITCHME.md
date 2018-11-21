@@ -67,6 +67,17 @@
 - За да създадем нова нишка в Java, наследяваме класа java.lang.Thread
 - Инструкциите за изпълнение поставяме в метода run() който не връща резултат
 
+@css[tip](Press the Space or Down key for a live demo.)
+
+@fa[arrow-down]
+
+@snap[south doclink]
+See the [GitPitch Code Presenting Docs](https://gitpitch.com/docs/code-features) for further details.
+@snapend
+
++++
+@css[menu-title slide-title](Source: JavaScript Block)
+
 ```
 public class CustomThread extends Thread { public void run() { System.out.println("Hello asynchronous world!"); } }
 ```
