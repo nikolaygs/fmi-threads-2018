@@ -1,14 +1,16 @@
-# Flux 
-
-An application architecture for React
+# Многонишково програмиране с Java
 
 ---
 
-### Flux Design
+### Съдържание
 
-- Dispatcher: Manages Data Flow
-- Stores: Handle State & Logic
-- Views: Render Data via React
+- Въведение
+- Управление на нишки 
+- Споделяне на ресурси 
+- Комуникация между нишки 
+- Преизползване на нишки 
+- Атомарни променливи
+- Конкурентни колекции
 
 ---
 
