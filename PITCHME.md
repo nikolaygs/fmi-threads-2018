@@ -102,4 +102,13 @@ public class CustomThread extends Thread { public void run() { System.out.printl
 --друга нишка 
 --чрез thread pool
 --в текущата нишка
+
+---
+
+### Thread API
+
+Програмистът може да именува нишката чрез setName(). Имената нe са уникални!
+```
+customThread.setName("Cool thread #1");
+```
 ---
