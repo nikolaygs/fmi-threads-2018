@@ -214,7 +214,7 @@ isInterrupted() // не изчиства флага (не-статичен)
 @fa[arrow-down]
 +++
 
-Thread.State е enum, съдържащ всички възможни състояния:
+Thread.State е enum, съдържащ всички възможни състояния:  
 NEW   
 RUNNABLE  
 BLOCKED  
