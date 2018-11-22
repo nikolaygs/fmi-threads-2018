@@ -93,3 +93,9 @@ public class CustomThread extends Thread { public void run() { System.out.printl
 ### java.lang.Runnable
 - Нишка може да бъде дефинирана и чрез интерфейса java.lang.Runnable
 - За да стартираме нишката, подаваме инстанция на конкретния клас на java.lang.Thread
+
+### Thread vs Runnable
+При употреба на Runnable сме по-гъвкави:
+- наследяване на друг клас
+- можем да решим да изпълним имплементацията в: • друга нишка • чрез thread pool (обяснение по-натам в лекцията) • в текущата нишка
+
