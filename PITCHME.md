@@ -223,6 +223,6 @@ TIMED_WAITING
 TERMINATED  
 
 ---
-
+![thread-states](http://www.ooxs.be/images/java/thread-states.png)
 ---
 
