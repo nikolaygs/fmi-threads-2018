@@ -171,5 +171,16 @@ isInterrupted() // не изчиства флага (не-статичен)
 @fa[arrow-down]
 +++
 Някой методи (sleep / join) хвърлят изключение java.lang.InterruptedException, когато нишката e получила сигнал за прекъсване, докато те се изпълняват
+
 ---
+### Присъединяване към друга нишка
+Дадена нишка може да паузира изпълнението си, докато друга нишка приключи чрез метода join()
+
+![Flux Explained](https://www.bogotobogo.com/cplusplus/C11/images/thread_1_intro/real_fork_join.png)
+
+@fa[arrow-down]
++++
+Можем да паузираме изпълнението за определено време чрез join(time_in_milisesconds) и да проверим собственоръчно дали другата нишка е приключила чрез isAlive()
+---
+
 
