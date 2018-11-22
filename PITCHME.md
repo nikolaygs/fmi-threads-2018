@@ -215,12 +215,12 @@ isInterrupted() // не изчиства флага (не-статичен)
 +++
 
 Thread.State е enum, съдържащ всички възможни състояния:
-NEW 
-RUNNABLE 
-BLOCKED 
-WAITING 
-TIMED_WAITING
-TERMINATED
+NEW   
+RUNNABLE  
+BLOCKED  
+WAITING  
+TIMED_WAITING  
+TERMINATED  
 
 ---
 
