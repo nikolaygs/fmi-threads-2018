@@ -111,4 +111,12 @@ public class CustomThread extends Thread { public void run() { System.out.printl
 ```
 customThread.setName("Cool thread #1");
 ```
+
+@fa[arrow-down]
+Също така, нишките могат да се групират логически чрез ThreadGroup. Групата може да се задава само чрез конструктора.
+```
+ThreadGroup coolThreads = new ThreadGroup("Cool thread group"); // Конструктор, който приема група и име coolThread1 = new Thread(coolThreads, "Cool thread #1"); coolThread2 = new Thread(coolThreads, "Cool thread #2");
+```
+
++++
 ---
