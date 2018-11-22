@@ -127,11 +127,17 @@ coolThread2 = new Thread(coolThreads, "Cool thread #2");
 
 „Спане“ – нишката „заспива“ и не получава процесорно време за определен интервал време
 
-```Thread.sleep(long miliseconds)```
+```
+Thread.sleep(long miliseconds)
+```
 
 Референция към текущата нишка
-```Thread.currentThread()```
+```
+Thread.currentThread()
+```
 
 Stack trace-а на нишката
-```Thread.getStackTrace()```
+```
+Thread.getStackTrace()
+```
 ---
