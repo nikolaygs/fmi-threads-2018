@@ -222,7 +222,10 @@ WAITING
 TIMED_WAITING  
 TERMINATED  
 
----
+@fa[arrow-down]
++++
+
 ![thread-states](http://www.ooxs.be/images/java/thread-states.png)
+
 ---
 
