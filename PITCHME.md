@@ -807,7 +807,7 @@ __ConcurrentHashMap__
 
 --- 
 
-__BlockingQueue__
+#### __BlockingQueue__
 
 - Имплементация на блокираща опашка (“Producer-Consumer” опашка)
 Блокира когато 
