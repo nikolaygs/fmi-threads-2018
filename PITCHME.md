@@ -701,3 +701,42 @@ static ExecutorService newFixedThreadPool(int n)
 // pool който изпълнява задачи периодично или със закъснение
 static ScheduledExecutorService newScheduledThreadPool(int size)
 ```
+
+---
+
+### Спиране на Thread pool
+
+Executor обект винаги трябва спира бъде експлицитно спрян с метода shutdown()
+
+---
+
+### Атомарни променливи
+- Имат същите свойства като volatile променливи, с разликата, че предоставят възможност за атомарни съставни операции
+
+- Позволява lock-free, thread-safe конкурентно програмиране върху променливи.
+
+- Използват специални хардуерни инструкции (“compare-and-swap”, CAS),  които позволяват избягването на ключалки
+
+
+@fa[arrow-down]
++++
+
+Предоставя атомарни имплементации на примитиви, масиви от примитиви и абстракция за атомарна референция (в пакета java.util.concurrent.atomic)
+
+AtomicBoolean, AtomicInteger, AtomicLong, AtomicIntegerArray, AtomicLongArray, AtomicReference<ActualType>
+
+---
+
+### Атомарни операции
+- Всички имплементации имат методи get() и set() за достъп до съхраняваната променлива. Tе са еквивалентни на четене и модификация на volatile променлива
+
+- Предоставя методи, емулиращи атомарни операции, които не използват синхронизация
+```
+// thread-safe вариант на ++i (i=i+1)
+atomicInt.incrementAndGet(); 
+// thread safe вариант на i += x (i=i+x) 
+atomicInt.addAndGet(x) 
+// thread-safe вариант на if (ref == expected) { ref = update; } 
+atomicRef.compareAndSet(expected, update)
+```
+---
