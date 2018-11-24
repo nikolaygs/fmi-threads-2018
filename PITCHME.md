@@ -778,8 +778,7 @@ static <T> Collection<T> synchronizedCollection(Collection<T> c)
   - Атомарни операции (пр. putIfAbsent)
   
 ---
-
-#### CopyOnWriteArrayList
+__CopyOnWriteArrayList__
 
 - Алтернатива на синхронизираните имплементации на ArrayList
 - Предоставя оптимизиран достъп до елементите, след като позволява lock-free паралелно четене
@@ -794,7 +793,7 @@ static <T> Collection<T> synchronizedCollection(Collection<T> c)
 
 --- 
 
-#### ConcurrentHashMap
+__ConcurrentHashMap__
 - Алтернатива на синхронизираните версии на java.util.HashMap
 - Паралелен lock-free достъп за четене
 - Паралелен (но лимитиран) достъп за писане 
@@ -808,7 +807,7 @@ static <T> Collection<T> synchronizedCollection(Collection<T> c)
 
 --- 
 
-#### BlockingQueue
+__BlockingQueue__
 
 - Имплементация на блокираща опашка (“Producer-Consumer” опашка)
 Блокира когато 
