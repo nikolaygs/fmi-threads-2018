@@ -60,17 +60,23 @@ _27.11.2018_
 
 ---
 
-### Дефиниране на нишка
+#### Дефиниране на нишка
+@ul
 - Всяка Java програма при стартирането си съдържа една нишка (main)
 - За да създадем нова нишка в Java, наследяваме класа java.lang.Thread
 - Инструкциите за изпълнение поставяме в метода run() който не връща резултат
+@ulend
 
 @fa[arrow-down]
 
 +++
 
 ```
-public class CustomThread extends Thread { public void run() { System.out.println("Hello asynchronous world!"); } }
+public class CustomThread extends Thread { 
+  public void run() {
+    System.out.println("Hello asynchronous world!");
+  } 
+}
 ```
 
 ---
