@@ -656,3 +656,23 @@ Kонцепция в конкурентното програмиране, при
 Отделните runnable обекти се третират като „задачи“ и се трупат в опашка, и когато има свободни нишки в poolа, те изпълняват задачите на базата на зададени правила.
 
 --- 
+
+### Executors API
+
+```
+// централен интерфейс
+java.util.concurrent.Executor  
+void execute(Runnable command)
+
+// добавя възможност и за изпълнение на Callable обекти,
+// които за разлика от Runnable, могат да върнат резултат
+java.util.concurrent.ExecutorService
+<T> Future<T> submit(Callable<T> task)
+
+// задачите могат да се пускат след опредено закъснение
+// или периодично на зададен интервал
+java.util.concurrent.ScheduledExecutorService
+ScheduledFuture schedule(Runnable r,long delay, TimeUnit tu) 
+ScheduledFuture scheduleAtFixedRate(Runnable r,long delay, long period, TimeUnit tu)
+```
+---
