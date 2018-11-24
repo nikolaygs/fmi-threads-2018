@@ -732,14 +732,49 @@ AtomicBoolean, AtomicInteger, AtomicLong, AtomicIntegerArray, AtomicLongArray, A
 
 @fa[arrow-down]
 +++
+
 Предоставя методи, емулиращи атомарни операции, които не използват синхронизация
 
 ```
 // thread-safe вариант на ++i (i=i+1)
 atomicInt.incrementAndGet(); 
+
 // thread safe вариант на i += x (i=i+x) 
 atomicInt.addAndGet(x) 
+
 // thread-safe вариант на if (ref == expected) { ref = update; } 
 atomicRef.compareAndSet(expected, update)
 ```
+---
+
+### Конкурентни колекции
+
+Collections API предоставя имплементации няколко thread-safe колекции като:
+Vector, Hashtable
+
+@fa[arrow-down]
++++
+
+Също така, има метод фабрика с който можем да си създадем thread-safe колекция.
+
+```
+static <T> Collection<T> synchronizedCollection(Collection<T> c)
+```
+
+@fa[arrow-down]
++++
+
+Имат два основни недостатъка:
+- не са достатъчно бързи при много конкурентни ползватели 
+- не предоставят възможност за атомарни операции
+
+---
+
+### Конкурентни колекции
+- създадени специално за работа в конкурентна среда
+- добавят възможности за:  
+  - Lock-free паралелен достъп
+  - Fail-safe итератори
+  - Атомарни операции (пр. putIfAbsent)
+  
 ---
