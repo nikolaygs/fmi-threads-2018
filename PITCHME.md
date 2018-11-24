@@ -47,11 +47,13 @@ _27.11.2018_
 ---
 
 #### Java + нишки
+
 @ul
 - управление на нишки – java.lang.Thread
 - синхронизация при достъп – ключовата дума synchronized
 - комуникация между нишки – Object.wait() / notify()
 @ulend
+
 ---
 
 #### Диспечер на нишки
@@ -98,14 +100,14 @@ public class CustomThread extends Thread {
 
 ---
 
-#### java.lang.Runnable
+__java.lang.Runnable__  
 @ul
 - Нишка може да бъде дефинирана и чрез интерфейса java.lang.Runnable
 - За да стартираме нишката, подаваме инстанция на конкретния клас на java.lang.Thread
 ---
 @ulend
 
-__Thread vs Runnable__
+__Thread vs Runnable__  
 При употреба на Runnable сме по-гъвкави:
 - наследяване на друг клас
 - можем да решим да изпълним имплементацията в: 
@@ -115,7 +117,7 @@ __Thread vs Runnable__
 
 ---
 
-### Thread API
+__Thread API__  
 
 Програмистът може да именува нишката чрез setName(). Имената нe са уникални!
 ```
