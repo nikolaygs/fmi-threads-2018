@@ -676,3 +676,27 @@ ScheduledFuture schedule(Runnable r,long delay, TimeUnit tu)
 ScheduledFuture scheduleAtFixedRate(Runnable r,long delay, long period, TimeUnit tu)
 ```
 ---
+
+### Създаване на Executor
+
+```
+// предоставя статични методи фабрики за създаването на pools от нишки
+java.util.concurrent.Executors
+
+// pool-ът ще се състои само от една нишка, следователно 
+// задачите ще се изпълняват последователно
+static ExecutorService newSingleThreadExecutor()
+
+// създава pool от нишки, който ще преизползва нишките,
+// ако има налични, в противен случай ще направи нова.
+// Нишките, който не се използвани през последната минута, ще бъдат премахнати
+static ExecutorService newCachedThreadPool()
+
+// създава pool от нишки, който ще се състои от фиксирани n на брой нишки. 
+// Ако в опашката има повече задачи, отколкото налични нишки, 
+// задачите не се обработват, докато не се освободи нишка
+static ExecutorService newFixedThreadPool(int n)  
+
+// връща pool, който може да изпълнява задачи периодично или със закъснение
+static ScheduledExecutorService newScheduledThreadPool(int size)
+```
