@@ -105,7 +105,7 @@ public class CustomThread extends Thread {
 ---
 @ulend
 
-#### Thread vs Runnable
+__Thread vs Runnable__
 При употреба на Runnable сме по-гъвкави:
 - наследяване на друг клас
 - можем да решим да изпълним имплементацията в: 
