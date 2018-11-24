@@ -129,13 +129,14 @@ customThread.setName("Cool thread #1");
 
 Също така, нишките могат да се групират логически чрез ThreadGroup. Групата може да се задава само чрез конструктора.
 ```
-ThreadGroup coolThreads = new ThreadGroup("Cool thread group"); // Конструктор, който приема група и име 
+// Конструктор, който приема група и име 
+ThreadGroup coolThreads = new ThreadGroup("Cool thread group");
 coolThread1 = new Thread(coolThreads, "Cool thread #1"); 
 coolThread2 = new Thread(coolThreads, "Cool thread #2");
 ```
 
 ---
-### Thread API
+__Thread API__
 
 „Спане“ – нишката „заспива“ и не получава процесорно време за определен интервал време
 
@@ -153,7 +154,8 @@ Stack trace-а на нишката
 Thread.getStackTrace()
 ```
 ---
-### Приоритет на нишки
+
+__Приоритет на нишки__
 
 Подсказка към диспечера на нишки, каква част от процесорното време да получи дадена нишка чрез метода setPriority()
 
@@ -161,6 +163,7 @@ Thread.getStackTrace()
 
 @fa[arrow-down]
 +++
+
 Отстъпване на процесорно време чрез метода yield() - сигнал, че текущата нишка се отказва от своето процесорно време в полза на друга нишка, чийто приоритет е минимум колкото този на текущата
 
 ---
