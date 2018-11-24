@@ -779,7 +779,7 @@ static <T> Collection<T> synchronizedCollection(Collection<T> c)
   
 ---
 
-### CopyOnWriteArrayList
+#### CopyOnWriteArrayList
 
 - Алтернатива на синхронизираните имплементации на ArrayList
 - Предоставя оптимизиран достъп до елементите, след като позволява lock-free паралелно четене
@@ -792,7 +792,9 @@ static <T> Collection<T> synchronizedCollection(Collection<T> c)
 
 Използването на тази структура е подходящо само когато броят на четенията от масива значително надвишава броя на модификациите. В противен случай, структурата е изключително неефективна
 
-### ConcurrentHashMap
+--- 
+
+#### ConcurrentHashMap
 - Алтернатива на синхронизираните версии на java.util.HashMap
 - Паралелен lock-free достъп за четене
 - Паралелен (но лимитиран) достъп за писане 
@@ -804,7 +806,9 @@ static <T> Collection<T> synchronizedCollection(Collection<T> c)
 
 Най-популярната колекция от j.u.c библиотеката, почти винаги е подходяща да се използва за замяната на съществуващите thread-safe варианти на HashMap
 
-### BlockingQueue
+--- 
+
+#### BlockingQueue
 
 - Имплементация на блокираща опашка (“Producer-Consumer” опашка)
 Блокира когато 
