@@ -368,6 +368,7 @@ Lock-ът е рекурсивен (reentrant): нишката, която го �
 +++
 
 ```
+class Demo {
   public void method1() {
     synchronized (this) {
       // изпълняващата нишка вече притежава lock-а
@@ -376,10 +377,9 @@ Lock-ът е рекурсивен (reentrant): нишката, която го �
     }
   }
 
-  public void method2() {
-    synchronized (this) {
-    }
+  public synchronized method2() {
   }
+}
 ```
 ---
 
