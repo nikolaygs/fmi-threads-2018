@@ -122,6 +122,8 @@ class CustomRunnable implements Runnable {
 }
 ```
 
+---
+
 За да стартираме нишката подаваме инстанция на конкретния клас на java.lang.Thread.
 ```
 Thread customThread = new Thread(new CustomRunnable());
