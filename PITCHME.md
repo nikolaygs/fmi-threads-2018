@@ -805,16 +805,16 @@ java.util.concurrent.Executors
 // задачите ще се изпълняват последователно
 static ExecutorService newSingleThreadExecutor()
 
+// създава pool, който ще се състои от фиксиран брой нишки. 
+// Ако в опашката има повече задачи, отколкото налични нишки, 
+// задачите не се обработват, докато не се освободи нишка
+static ExecutorService newFixedThreadPool(int n)  
+
 // създава pool от нишки, който ще преизползва нишките,
 // ако има налични, в противен случай ще направи нова.
 // Нишките, който не се използвани през последната минута 
 // ще бъдат премахнати
 static ExecutorService newCachedThreadPool()
-
-// създава pool, който ще се състои от фиксиран брой нишки. 
-// Ако в опашката има повече задачи, отколкото налични нишки, 
-// задачите не се обработват, докато не се освободи нишка
-static ExecutorService newFixedThreadPool(int n)  
 
 // pool който изпълнява задачи периодично или със закъснение
 static ScheduledExecutorService newScheduledThreadPool(int size)
