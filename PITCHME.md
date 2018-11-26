@@ -284,7 +284,8 @@ __Daemon__
 @fa[arrow-down]
 +++
 
-Thread.State е enum, съдържащ всички възможни състояния:  
+__Thread.State__
+enum съдържащ всички възможни състояния:  
 NEW   
 RUNNABLE  
 BLOCKED  
