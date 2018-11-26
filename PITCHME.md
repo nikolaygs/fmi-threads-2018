@@ -112,10 +112,20 @@ public class CustomThread extends Thread {
 ---
 
 __java.lang.Runnable__  
-@ul
-- Нишка може да бъде дефинирана и чрез интерфейса java.lang.Runnable
-- За да стартираме нишката, подаваме инстанция на конкретния клас на java.lang.Thread
-@ulend
+Нишка може да бъде дефинирана и чрез интерфейса java.lang.Runnable
+
+```
+class CustomRunnable implements Runnable {
+  public void run() {
+    System.out.println("Hello asynchronous world!");
+  }
+}
+```
+
+За да стартираме нишката подаваме инстанция на конкретния клас на java.lang.Thread.
+```
+Thread customThread = new Thread(new CustomRunnable());
+```
 
 ---
 
