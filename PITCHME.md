@@ -147,7 +147,7 @@ __Thread vs Runnable__
 
 __Thread API__  
 
-Програмистът може да именува нишката чрез setName(). Имената нe са уникални!
+Програмистът може да именува нишката чрез ```setName()```. Имената нe са уникални!
 ```
 customThread.setName("Cool thread #1");
 ```
