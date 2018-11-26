@@ -774,7 +774,7 @@ Kонцепция в конкурентното програмиране, при
 
 --- 
 
-#### Executors API
+__Executors API__  
 
 ```
 // централен интерфейс
@@ -795,7 +795,7 @@ ScheduledFuture scheduleAtFixedRate(Runnable r,long delay,
 ```
 ---
 
-#### Създаване на Executor
+__Създаване на Executor__  
 
 ```
 // предоставя статични методи фабрики за създаването на pools от нишки
@@ -822,7 +822,7 @@ static ScheduledExecutorService newScheduledThreadPool(int size)
 
 ---
 
-#### Спиране на Thread pool
+__Спиране на Thread pool__  
 
 Executor обект винаги трябва спира бъде експлицитно спрян с метода shutdown()
 
