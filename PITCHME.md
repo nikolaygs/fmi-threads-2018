@@ -448,6 +448,8 @@ private final Object dedicatedMonitor = new Object();
 Една нишка може да „притежава“ много на брой монитори, стига те да са свободни:
 
 ```
+  // NB! Държането на няколко ключалки е лоша практика и 
+  // при възможност трябва да се избягва !!!
   public void multipleLocks() {
     synchronized (lock1) {
       // нишката притежава lock1
@@ -462,7 +464,6 @@ private final Object dedicatedMonitor = new Object();
     }
   }
 ```
-NB! Държането на няколко ключалки е лоша практика и при възможност трябва да се избягва.
 
 ---
 
