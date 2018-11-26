@@ -221,7 +221,7 @@ isInterrupted() // не изчиства флага (не-статичен)
 
 __java.lang.InterruptedException__
 
-Някой методи (sleep / join) хвърлят изключение java.lang.InterruptedException, когато нишката e получила сигнал за прекъсване, докато те се изпълняват
+Някой методи ```(sleep / join)``` хвърлят изключение ```java.lang.InterruptedException```, когато нишката e получила сигнал за прекъсване, докато те се изпълняват
 
 ---
 
