@@ -765,7 +765,7 @@ Kонцепция в конкурентното програмиране, при
 
 Задава абстракция от управлението на жизнения цикъл на нишката (създаване, старт/стоп, преизползване)
 
-[!test](https://en.wikipedia.org/wiki/File:Thread_pool.svg)
+![test](https://en.wikipedia.org/wiki/File:Thread_pool.svg)
 
 @fa[arrow-down]
 +++
