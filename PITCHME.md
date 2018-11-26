@@ -122,7 +122,8 @@ class CustomRunnable implements Runnable {
 }
 ```
 
----
+@fa[arrow-down]
++++
 
 За да стартираме нишката подаваме инстанция на конкретния клас на java.lang.Thread.
 ```
