@@ -251,9 +251,6 @@ void join(long millis)
 boolean isAlive()
 ```
 
-Можем да паузираме изпълнението за определено време чрез join(time_in_milisesconds) и да проверим собственоръчно дали другата нишка е приключила чрез isAlive()
-```
-
 ---
 
 #### Daemon нишки
