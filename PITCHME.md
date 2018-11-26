@@ -284,7 +284,7 @@ __Daemon__
 @fa[arrow-down]
 +++
 
-__Thread.State__
+__Thread.State__  
 enum съдържащ всички възможни състояния:  
 NEW   
 RUNNABLE  
