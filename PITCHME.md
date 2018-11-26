@@ -104,7 +104,7 @@ public class CustomThread extends Thread {
 #### Спиране на нишка
 
 @ul
-- Нишката прекратява изпълнението си автоматично след приключването на метода run()
+- Нишката прекратява изпълнението си автоматично след приключването на метода ```run()```
 - Нишката не може да бъде стартирана повторно!
 @ulend
 
@@ -124,7 +124,7 @@ class CustomRunnable implements Runnable {
 @fa[arrow-down]
 +++
 
-За да стартираме нишката подаваме инстанция на конкретния клас на java.lang.Thread.
+За да стартираме нишката подаваме инстанция на конкретния клас на ```java.lang.Thread```.
 ```
 Thread customThread = new Thread(new CustomRunnable());
 ```
