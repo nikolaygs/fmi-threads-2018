@@ -20,7 +20,7 @@ _27.11.2018_
 #### Какво е нишка?
 
 Отделен път на изпълнение в програма, който се изпълнява конкурентно.
-![threads](https://github.com/nikolaygs/fmi-threads-2018/blob/master/img/multithreading.png)
+![threads](https://raw.githubusercontent.com/nikolaygs/fmi-threads-2018/master/img/multithreading.png)
 
 ---
 
