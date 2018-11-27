@@ -306,7 +306,7 @@ TERMINATED
 @fa[arrow-down]
 +++
 
-![thread-states](http://www.ooxs.be/images/java/thread-states.png)
+![thread-states](https://github.com/nikolaygs/fmi-threads-2018/blob/master/img/states.png?raw=true)
 
 ---
 
